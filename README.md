@@ -66,8 +66,8 @@ This repository is structured as a monorepo containing both the frontend and bac
 ### Quick Start
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/MedReview.git](https://github.com/your-username/MedReview.git)
-   cd MedReview
+   git clone https://github.com/nata-kostina/med-review.git
+   cd med-review
    ```
 2. **Backend Setup:**
    Navigate to the backend directory and start the server:
