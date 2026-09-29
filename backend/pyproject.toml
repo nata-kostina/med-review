@@ -1,0 +1,43 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Natallia", email = "natakostina123@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "azure-ai-documentintelligence==1.0.2",
+    "fastapi==0.141.1",
+    "openai==3.7.0",
+    "pydantic-settings==2.15.0",
+    "python-dateutil==2.9.0.post0",
+    "python-multipart==0.0.32",
+    "sqlalchemy==2.0.52",
+    "uvicorn==0.52.4",
+]
+
+[tool.uv]
+add-bounds = "exact"
+exclude-newer = "7 days"
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"] 
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-s"
+
+[dependency-groups]
+dev = [
+    "ipykernel==7.3.0",
+    "pytest==9.1.1",
+    "rich==15.0.0",
+    "ruff==0.16.5",
+]

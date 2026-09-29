@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "name": "🐍 Backend",
+      "path": "backend"
+    },
+    {
+      "name": "⚛️ Frontend",
+      "path": "frontend"
+    },
+    {
+      "name": "📦 Root Files",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.analysis.extraPaths": [
+      "./backend"
+    ],
+    "files.exclude": {
+      "**/backend": true,
+      "**/frontend": true
+    }
+  }
+}
