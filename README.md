@@ -10,6 +10,8 @@ Here is the link to the fully working deployment: [MedReview](https://ca-med-rev
 
 Sample documents for testing the application can be found in the `./samples` directory.
 
+### Demo
+
 ![App Demo](./demo.gif)
 
 ## Key Features
@@ -50,8 +52,8 @@ Sample documents for testing the application can be found in the `./samples` dir
 This repository is structured as a monorepo containing both the frontend and backend applications. For detailed setup guides, architecture decisions, and component specs, please refer to their respective documentation:
 
 * [Client Brief](./client-brief.md)
-* [Frontend README](./frontend/README.md)
 * [Backend README](./backend/README.md)
+* [Frontend README](./frontend/README.md)
 
 ## Local Development
 
