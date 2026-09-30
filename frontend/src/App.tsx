@@ -4,6 +4,7 @@ import { api } from './api'
 import { AppHeader } from './components/AppHeader'
 import { ProcessingStep } from './components/ProcessingStep'
 import { UploadStep } from './components/UploadStep'
+import { targetYM } from './lib/ym'
 import { History } from './views/History'
 import { Result } from './views/Result'
 import WelcomePortal from './views/WelcomePortal'
@@ -26,6 +27,7 @@ function App() {
     }
 
     function startReview() {
+        targetYM('click-review')
         setFile(null)
         setSelected(null)
         setError(null)
@@ -33,6 +35,7 @@ function App() {
     }
 
     async function openHistory() {
+        targetYM('click-history')
         setView('history')
         setError(null)
         setHistoryLoading(true)
@@ -74,6 +77,7 @@ function App() {
 
     async function processDocument() {
         if (!file) return
+        targetYM('click-process-document')
         setError(null)
         setView('processing')
         try {
